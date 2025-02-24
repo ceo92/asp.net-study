@@ -1,4 +1,3 @@
-# asp.net-study
 <img width="440" alt="image" src="https://github.com/user-attachments/assets/b30e2b2f-1462-4757-ab0e-1d9dcc502eb7" />
 
 <br>
@@ -29,6 +28,13 @@
 - 둘의 차이는 MVC는 컨트롤러에서 모델 넘겨서 뷰에서 SSR을 통해 화면에 랜더링되는 것이고 API 방식은 상대방에게 데이터를 전달하는 개념임, **즉 화면을 설계하고 싶으면 MVC, 데이터를 전달하고싶으면 API**
 - API 방식은 JSON 형식의 데이터로 통신하므로 어떤 플랫폼이든 구애받지 않고 통신 가능, IOS, Android와 통신 가능, 자바 스프링과 ajax를 통해 통신 가능!
 
+<br>
+
 ## ASP.NET(닷넷 프레임워크) VS ASP.NET Core(닷넷 코어)
 - ASP.NET: 윈도우 서버에서만 개발 가능, Full dot net, System.Net.XXXX
 - ASP.NET Core은 크로스 플랫폼 지원함에 따라 모든 OS 구애받지 않고 개발 가능, System.Net.XXXX 삭제해서 퍼포먼스적으로 빨라짐 응답 속도 면에서 우수
+
+## ASP.NET Version
+- ASP.NET 4.xx - ASP.NET MVC 5(= ASP.NET Core 5)
+- ASP.NET 5.xx - ASP.NET MVC 6(= ASP.NET Core 6)
+- ASP.NET과 ASP.NET Core은 1버전씩 차이가 남
