@@ -11,7 +11,9 @@
 - 개발도구: Visual Studio, DB: MS SQL
 - Mac은 Visual Studio를 2024년 8월 31일자로 종료했으므로 Visual Studio Code 혹은 Rider 사용해야됨
 
-## ASP.NET MVC
+<br>
+
+## ★ ASP.NET MVC
 - 초기에는 Web Form을 통해 ASP.NET을 개발
 - 하지만 Web Form은 HTML 코드 내에 ASP.NET 관련 소스코드들이 겹치게되어 추후 유지보수가 힘듬
 - UI를 담당하는 HTML에서 ASP.NET 관련 C# 소스코드가 혼합되니 유지보수가 힘들고 코드가 지저분해짐, 대용량 프로젝트일 경우 더 혼잡 우려
@@ -20,8 +22,13 @@
 - 그에 따라 ASP.NET MVC 등장하며 UI 영역과 코드 영역 분리할 수 있게 됨, Controller에서 요청 및 응답 처리하고 Model에 데이터를 넣어서 View에 전달하면 View에선 UI 담당하고 Controller로부터 넘어온 Model을 통해 동적 랜더링 가능
 - Spring도 강력한 MVC가 있음에 따라 구시대적인 Web Form을 하는 것보단 ASP.NET MVC가 좋음
 
+<br>
 
-## Web API(REST API)
+## ★ Web API(REST API)
 - 웹 애플리케이션 상에서 HTTP 응답 방식은 1. MVC 방식 및 2. API 방식이 존재하는데 1. MVC방식이 ASP.NET MVC이고 2. API 방식이 Web API 즉 REST API 통신!
 - 둘의 차이는 MVC는 컨트롤러에서 모델 넘겨서 뷰에서 SSR을 통해 화면에 랜더링되는 것이고 API 방식은 상대방에게 데이터를 전달하는 개념임, **즉 화면을 설계하고 싶으면 MVC, 데이터를 전달하고싶으면 API**
 - API 방식은 JSON 형식의 데이터로 통신하므로 어떤 플랫폼이든 구애받지 않고 통신 가능, IOS, Android와 통신 가능, 자바 스프링과 ajax를 통해 통신 가능!
+
+## ASP.NET(닷넷 프레임워크) VS ASP.NET Core(닷넷 코어)
+- ASP.NET: 윈도우 서버에서만 개발 가능, Full dot net, System.Net.XXXX
+- ASP.NET Core은 크로스 플랫폼 지원함에 따라 모든 OS 구애받지 않고 개발 가능, System.Net.XXXX 삭제해서 퍼포먼스적으로 빨라짐 응답 속도 면에서 우수
