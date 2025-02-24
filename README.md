@@ -34,10 +34,17 @@
 - ASP.NET: 윈도우 서버에서만 개발 가능, Full dot net, System.Net.XXXX
 - ASP.NET Core은 크로스 플랫폼 지원함에 따라 모든 OS 구애받지 않고 개발 가능, System.Net.XXXX 삭제해서 퍼포먼스적으로 빨라짐 응답 속도 면에서 우수
 
-
-
-
 <br>
 
 ## Blazor
-- 프론트를 C#으로도 개발 가능, 즉 Blazor을 통해 Front-end 및 Back-end 풀스택 개발 가능 
+- 프론트를 C#으로도 개발 가능, 즉 Blazor을 통해 Front-end 및 Back-end 풀스택 개발 가능
+
+<br>
+
+## 프로젝트 생성(for Mac)
+https://learn.microsoft.com/ko-kr/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-10.0&tabs=visual-studio-code <= 참고(공식 사이트)
+1. 비쥬얼 스튜디오 코드 설치
+2. 비쥬얼 스튜디오 내에서 C# 개발 키트 설치
+3. 마이크로소프트 계정 연결 및 개발할 프로젝트 폴더 지정
+4. .NET SDK 설치(Java의 JDK와 같은) 후 껐다 켜야됨(껐다 켜야 비쥬얼 스튜디오 코드와 SDK 연동)
+5. .NET Core 웹앱 MVC 프로젝트 생성(웹앱 API가 아닌 웹앱 MVC 선택하기, 어차피 MVC 안에 API가 들어가있어서 MVC 프로젝트에서 API 통신 가능)
