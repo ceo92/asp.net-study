@@ -34,12 +34,8 @@
 - ASP.NET: 윈도우 서버에서만 개발 가능, Full dot net, System.Net.XXXX
 - ASP.NET Core은 크로스 플랫폼 지원함에 따라 모든 OS 구애받지 않고 개발 가능, System.Net.XXXX 삭제해서 퍼포먼스적으로 빨라짐 응답 속도 면에서 우수
 
-<br>
 
-## ASP.NET Version
-- ASP.NET 4.xx - ASP.NET MVC 5(= ASP.NET Core 5)
-- ASP.NET 5.xx - ASP.NET MVC 6(= ASP.NET Core 6)
-- ASP.NET과 ASP.NET Core은 1버전씩 차이가 남
+
 
 <br>
 
