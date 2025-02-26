@@ -48,3 +48,4 @@ https://learn.microsoft.com/ko-kr/aspnet/core/tutorials/first-mvc-app/start-mvc?
 3. 마이크로소프트 계정 연결 및 개발할 프로젝트 폴더 지정
 4. .NET SDK 설치(Java의 JDK와 같은) 후 껐다 켜야됨(껐다 켜야 비쥬얼 스튜디오 코드와 SDK 연동)
 5. .NET Core 웹앱 MVC 프로젝트 생성(웹앱 API가 아닌 웹앱 MVC 선택하기, 어차피 MVC 안에 API가 들어가있어서 MVC 프로젝트에서 API 통신 가능)
+※ .NET SDK는 해당 프로젝트에 깔려있으므로 해당 
