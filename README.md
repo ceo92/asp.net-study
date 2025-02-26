@@ -54,3 +54,4 @@ https://learn.microsoft.com/ko-kr/aspnet/core/tutorials/first-mvc-app/start-mvc?
 - ※ dotnet 명령은 iTerms와 같은 터미널이 아닌 비쥬얼 스튜디오 코드 내 터미널에서만 가능
 - ※ Command + Shift + P를 통해 프로젝트 생성 가능
 - ```dotnet new mvc -o [MVC 프로젝트 명]``` 콘솔에서 해당 명령을 통해 닷넷 MVC 프로젝트 생성 가능
+- 결론: C# + C# Dev Kit + .NET SDK + Visual Studio Code = 개발환경 세팅 끝
