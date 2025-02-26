@@ -51,8 +51,5 @@ https://learn.microsoft.com/ko-kr/aspnet/core/tutorials/first-mvc-app/start-mvc?
 <img width="961" alt="image" src="https://github.com/user-attachments/assets/1756426b-4dfb-45cd-847b-35cee562602d" />
 
 사진과 같이 웹앱이 아닌 웹앱 MVC(Model View Controller)을 선택해야됨
-※ dotnet 명령은 iTerms와 같은 터미널이 아닌 비쥬얼 스튜디오 코드 내 터미널에서만 가능
-
-
-## 비쥬얼 스튜디오 코드로 실행하는 방법
-https://learn.microsoft.com/ko-kr/dotnet/core/tutorials/with-visual-studio-code
+- ※ dotnet 명령은 iTerms와 같은 터미널이 아닌 비쥬얼 스튜디오 코드 내 터미널에서만 가능
+- ※ Command + Shift + P를 통해 프로젝트 생성 가능
