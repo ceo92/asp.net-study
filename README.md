@@ -189,10 +189,14 @@ ViewData["UserBName"] = userB.UserName;
 
 
 #### EntityFramework Core
-- ORM
+- 최근 사용하는 ASP.NET에서의 DB 접근 기술 ORM
 - EntityFramework도 1.0부터 꾸준히 버전 나오는 중
 - Mapper란 친구도 있음
+- EntityFramework 1.0 ~ 6.0 => .Net Framework
+- EntityFramework 7.0(EntityFramework Core) ~ =>  .Net Core
+- ASP.NET Core 버전과 EntityFramework Core 버전은 동일하게 올라감(2025/02/28 기준 둘 다 9.0)
 
 
-- 최근 사용하는 ASP.NET에서의 DB 접근 기술
-  
+ ### EntityFramework 개발 방식 2가지
+ #### 1) Database First 방식
+ 
