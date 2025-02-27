@@ -55,3 +55,19 @@ https://learn.microsoft.com/ko-kr/aspnet/core/tutorials/first-mvc-app/start-mvc?
 - ※ Command + Shift + P를 통해 프로젝트 생성 가능
 - ```dotnet new mvc -o [MVC 프로젝트 명]``` 콘솔에서 해당 명령을 통해 닷넷 MVC 프로젝트 생성 가능
 - 결론: C# + C# Dev Kit + .NET SDK + Visual Studio Code = 개발환경 세팅 끝
+
+## appsettings.json
+- DB 커넥션 정보 및 비밀번호 같은 것들 세팅할 경우 사용(application.properties라 보면 됨), 민감 정보들을 전역적으로 설정 가능
+
+
+## 공통 레이아웃
+- ASP.NET.Core MVC 프로젝트 생성 시 내부적으로 레이아웃 파일이 생성됨
+- 해당 파일은 Microsoft 표준 레이아웃 파일임
+- 이름은 기본적으로 Microsoft에서 _ViewStart.cshtml 파일에서 @{Layout = "_Layout"}으로 정의함으로써 cshtml 파일명이 _Layout이면 공통 레이아웃 파일이라고 설정
+- 해당 _Layout.cshtml 파일에서 공통 레이아웃 정의하면 됨
+- 스프링 부트는 오픈소스로서 레이아웃을 JSP, Thymeleaf와 같은 여러 템플릿 엔진을 사용해서 정의할 수 있지만, ASP.NET은 Microsoft가 미리 정의해놨고 편하게 해당 틀 내에서 사용자가 레이아웃을 커스터마이징 할 수 있음
+
+
+
+
+
