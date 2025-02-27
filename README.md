@@ -110,20 +110,59 @@ else{
 
 ## Controller에서 View로 Model 넘기는 3가지 방법
 - 컨트롤러에서 ```return View()```를 통해 전달 가능
-- 이때 View() 메서드에 어떤 파라메터를 지정하느냐에 따라 3가지 방법으로 나뉨(1. 직접 객체 전달 2. ViewBag 전달 3. ViewData 전달)
+- 이때 View() 메서드에 어떤 파라메터를 지정하느냐에 따라 3가지 방법으로 나뉨(1. 직접 객체 전달(Model) 2. ViewBag 전달 3. ViewData 전달)
 
-### 1. 직접 객체 전달
+### 1. 직접 객체 전달(Model)
 ```cs
+//컨트롤러
 User user = new User(1 , "kim");
-return View(user)
+return View(user);
+
+//뷰
+<h2>@Model.UserNo</h2>
+<h2>@Model.UserName</h2>
 ```
 
-
-
 ### 2. ViewBag 전달
+```cs
+//컨트롤러
+User userA = new User(1 , "kim");
+User userB = new User(2 , "park");
 
+ViewBag.UserA = userA;
+ViewBag.UserB = userB;
+return View(ViewBag);
+
+//뷰
+<h2>@ViewBag.UserA.UserNo</h2>
+<h2>@ViewBag.UserA.UserName</h2>
+
+<h2>@ViewBag.UserB.UserNo</h2>
+<h2>@ViewBag.UserB.UserName</h2>
+```
 
 ### 3. ViewData 전달
+```cs
+//컨트롤러
+User userA = new User(1 , "kim");
+User userB = new User(2 , "park");
+ViewData["UserANo"] = userA.UserNo;
+ViewData["UserAName"] = userA.UserName;
 
+ViewData["UserBNo"] = userB.UserNo;
+ViewData["UserBName"] = userB.UserName;
 
+//뷰
+<h2>@ViewData["UserANo"]</h2>
+<h2>@ViewData["UserAName"]</h2>
 
+<h2>@ViewData["UserBNo"]</h2>
+<h2>@ViewData["UserBName"]</h2>
+```
+
+### 의의
+- Model: 한 객체만 전달할 수 있음, 모든 타입 가능
+- ViewBag: 여러 개의 객체 전달 가능, 모든 타입 가능
+- ViewData: 여러 개의 값 전달 가능, 일반 타입만 가능
+※ 개인적으로 ViewBag가 가장 맛있는듯 여러 개 전달되고 객체도 전달할 수 있단 점에서, ViewData는 일반타입만 된다는 게 별로일듯 비용은 적을 순 있어도 ㅎㅎ;
+※ 그리고 ViewBag와 ViewData는 @ViewBag @ViewData로 모델에 접근하니 Model이 아닌 것처럼 보이지만 둘다 결국 MVC 패턴 안에서 뷰에 Model로서 객체 혹은 값이 전달되는 것이므로 개념적으로는 Model이 맞음
