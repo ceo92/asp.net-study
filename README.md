@@ -66,7 +66,7 @@ https://learn.microsoft.com/ko-kr/aspnet/core/tutorials/first-mvc-app/start-mvc?
 - 이름은 기본적으로 Microsoft에서 _ViewStart.cshtml 파일에서 @{Layout = "_Layout"}으로 정의함으로써 cshtml 파일명이 _Layout이면 공통 레이아웃 파일이라고 설정
 - 해당 _Layout.cshtml 파일에서 공통 레이아웃 정의하면 됨
 - 스프링 부트는 오픈소스로서 레이아웃을 JSP, Thymeleaf와 같은 여러 템플릿 엔진을 사용해서 정의할 수 있지만, ASP.NET은 Microsoft가 미리 정의해놨고 편하게 해당 틀 내에서 사용자가 레이아웃을 커스터마이징 할 수 있음
-
+- 레이아웃은 헤더 및 푸터로 잘 구현되어있음 ㅇㅇ 손 안대도 됨 이 위에서 갈아끼우기만 하면 될듯
 
 
 
