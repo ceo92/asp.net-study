@@ -56,11 +56,14 @@ https://learn.microsoft.com/ko-kr/aspnet/core/tutorials/first-mvc-app/start-mvc?
 - ```dotnet new mvc -o [MVC 프로젝트 명]``` 콘솔에서 해당 명령을 통해 닷넷 MVC 프로젝트 생성 가능
 - 결론: C# + C# Dev Kit + .NET SDK + Visual Studio Code = 개발환경 세팅 끝
 
+<br>
+
 ## appsettings.json
 - DB 커넥션 정보 및 비밀번호 같은 것들 세팅할 경우 사용(application.properties라 보면 됨), 민감 정보들을 전역적으로 설정 가능
 
+<br>
 
-## 공통 레이아웃
+## 공통 레이아웃(Microsoft 표준 레이아웃 _Layout)
 - ASP.NET.Core MVC 프로젝트 생성 시 내부적으로 레이아웃 파일이 생성됨
 - 해당 파일은 Microsoft 표준 레이아웃 파일임
 - 이름은 기본적으로 Microsoft에서 _ViewStart.cshtml 파일에서 @{Layout = "_Layout"}으로 정의함으로써 cshtml 파일명이 _Layout이면 공통 레이아웃 파일이라고 설정
@@ -69,5 +72,36 @@ https://learn.microsoft.com/ko-kr/aspnet/core/tutorials/first-mvc-app/start-mvc?
 - 레이아웃은 헤더 및 푸터로 잘 구현되어있음 ㅇㅇ 손 안대도 됨 이 위에서 갈아끼우기만 하면 될듯
 - 레이아웃에는 ```@ViewData[키]```로 정의돼있는데 사용자 cshtml 파일에서 해당 값에 각 사용자마자 차별화된 값을 매겨서 할당할 수 있음 예를 들어 ```<title>@ViewData["title"] Page</title>```라고 _Layout 파일에서 지정해놨으면 각 사용자 파일에선 @{ViewData["Title"] = "Hello"}라고 한다면 최종 해당 페이지 랜더링 시에는 Hello Page 형태가 됨
 
+## Razor Syntax
+### 개요
+- JSP에서는 HTML 파일 내에서 자바 코딩이 가능하듯 C#도 HTML 파일 내에서 C# 코딩이 가능하다
+- Razor Syntax를 통해 가능
+- ```@{}``` 영역 안에서 사용 가능
+- C# 코드 전부 다 사용이 가능한 게 아닌 제한적으로 사용 가능
+- if, for, foreach, 타입 컨버팅(string -> int), ToString()
 
+### 변수 선언
+```
+@{
+  var age="20";
+}
+```
+- 위와 같이 ```@{}``` 영역 내에서 자유롭게 C# 코드 작성 가능
+
+### 변수 호출
+```<h1>나이는 @age세 입니다</h1>```
+
+### for문 및 if문
+```
+@if(@name=="레인보우 푸쉬업바"){
+            <h2>푸쉬업바가 맛있어요</h2>    
+        }
+        else{
+            <h2>별로 맛없어요</h2>    
+        }
+
+        @for(int i=0;i<5;i++){
+            <h2>최고최고</h2>    
+        }
+```
 
