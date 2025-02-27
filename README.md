@@ -1,4 +1,4 @@
-<img width="440" alt="image" src="https://github.com/user-attachments/assets/b30e2b2f-1462-4757-ab0e-1d9dcc502eb7" />
+`<img width="440" alt="image" src="https://github.com/user-attachments/assets/b30e2b2f-1462-4757-ab0e-1d9dcc502eb7" />
 
 <br>
 
@@ -79,29 +79,51 @@ https://learn.microsoft.com/ko-kr/aspnet/core/tutorials/first-mvc-app/start-mvc?
 - ```@{}``` 영역 안에서 사용 가능
 - C# 코드 전부 다 사용이 가능한 게 아닌 제한적으로 사용 가능
 - if, for, foreach, 타입 컨버팅(string -> int), ToString()
+- 즉 html에서 C# 코드 사용하려면 Razor Syntax인 @를 사용해야됨
 
-### 변수 선언
-```
+### 활용 1) 변수 선언
+```cs
 @{
   var age="20";
 }
 ```
 - 위와 같이 ```@{}``` 영역 내에서 자유롭게 C# 코드 작성 가능
 
-### 변수 호출
+### 활용 2) 변수 호출
 ```<h1>나이는 @age세 입니다</h1>```
 
-### for문 및 if문
-```
+### 활용 3) for문 및 if문
+```cs
 @if(@name=="레인보우 푸쉬업바"){
-            <h2>푸쉬업바가 맛있어요</h2>    
-        }
-        else{
-            <h2>별로 맛없어요</h2>    
-        }
+    <h2>푸쉬업바가 맛있어요</h2>    
+}
+else{
+    <h2>별로 맛없어요</h2>    
+}
 
-        @for(int i=0;i<5;i++){
-            <h2>최고최고</h2>    
-        }
+@for(int i=0;i<5;i++){
+    <h2>최고최고</h2>    
+}
 ```
+
+<br>
+
+## Controller에서 View로 Model 넘기는 3가지 방법
+- 컨트롤러에서 ```return View()```를 통해 전달 가능
+- 이때 View() 메서드에 어떤 파라메터를 지정하느냐에 따라 3가지 방법으로 나뉨(1. 직접 객체 전달 2. ViewBag 전달 3. ViewData 전달)
+
+### 1. 직접 객체 전달
+```cs
+User user = new User(1 , "kim");
+return View(user)
+```
+
+
+
+### 2. ViewBag 전달
+
+
+### 3. ViewData 전달
+
+
 
