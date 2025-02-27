@@ -164,7 +164,6 @@ ViewData["UserBName"] = userB.UserName;
 - Model: 한 객체만 전달할 수 있음, 모든 타입 가능
 - ViewBag: 여러 개의 객체 전달 가능, 모든 타입 가능
 - ViewData: 여러 개의 값 전달 가능, 일반 타입만 가능
-<br>
+>
 ※ 개인적으로 ViewBag가 가장 맛있는듯 여러 개 전달되고 객체도 전달할 수 있단 점에서, ViewData는 일반타입만 된다는 게 별로일듯 비용은 적을 순 있어도 ㅎㅎ;
-<br>
 ※ 그리고 ViewBag와 ViewData는 @ViewBag @ViewData로 모델에 접근하니 Model이 아닌 것처럼 보이지만 둘다 결국 MVC 패턴 안에서 뷰에 Model로서 객체 혹은 값이 전달되는 것이므로 개념적으로는 Model이 맞음
