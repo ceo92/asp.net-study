@@ -180,7 +180,7 @@ ViewData["UserBName"] = userB.UserName;
 #### 2. Enterprise Library
 - SQL Mapper
 - ADO.NET보다 Logging 처리 면에서 효율 좋았음
-
+- 하지만 결국 둘 다 SQL Mapper이므로 유지보수 시 까다로움
 
 #### 쿼리 의존에 문제
 - 쿼리를 개발자가 직접 작성하다보면 에러가 안 나다보니 결국 배포 후에 에러를 알 수 있기에 유지보수하기 어려움
