@@ -110,13 +110,14 @@ else{
 
 ## Controller에서 View로 Model 넘기는 3가지 방법
 - 컨트롤러에서 ```return View()```를 통해 전달 가능
-- 이때 View() 메서드에 어떤 파라메터를 지정하느냐에 따라 3가지 방법으로 나뉨(1. 직접 객체 전달(Model) 2. ViewBag 전달 3. ViewData 전달)
+- 이때 View() 메서드에 어떤 파라메터를 지정하느냐에 따라 3가지 방법으로 나뉨(1. 뷰 파라메터로 객체 전달(Model) 2. ViewBag 전달 3. ViewData 전달)
 
-### 1. 직접 객체 전달(Model)
+### 1. 뷰 파라메터로 전달(Model)
 ```cs
 //컨트롤러
 User user = new User(1 , "kim");
 return View(user);
+// return View([원하는 객체 혹은 값])
 
 //뷰
 <h2>@Model.UserNo</h2>
@@ -131,6 +132,7 @@ User userB = new User(2 , "park");
 
 ViewBag.UserA = userA;
 ViewBag.UserB = userB;
+//ViewBag.원하는이름 = 원하는객체 혹은 값;
 return View(ViewBag);
 
 //뷰
@@ -151,6 +153,9 @@ ViewData["UserAName"] = userA.UserName;
 
 ViewData["UserBNo"] = userB.UserNo;
 ViewData["UserBName"] = userB.UserName;
+//ViewData[원하는 이름] = 원하는 값
+return View(ViewData);
+
 
 //뷰
 <h2>@ViewData["UserANo"]</h2>
