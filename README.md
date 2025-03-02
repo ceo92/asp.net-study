@@ -199,4 +199,12 @@ ViewData["UserBName"] = userB.UserName;
 
  ### EntityFramework 개발 방식 2가지
  #### 1) Database First 방식
- 
+- 선 DB 후 코딩
+- DB 설계 전부 다 하고 물리적 DB도 모두 완성된 상태에서 애플리케이션 작업 들어가는 것
+- DB 기준으로 애플리케이션 개발
+- 한국 일반적인 SI에서는 DB가 설계되어있어서 해당 방식 주로 씀
+
+#### 2) Code First 방식
+- 선 코드 후 DB
+
+
