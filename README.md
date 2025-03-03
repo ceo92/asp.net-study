@@ -182,6 +182,11 @@ return View(ViewData);
 
 <br>
 
+## Coding Style
+https://learn.microsoft.com/ko-kr/dotnet/csharp/fundamentals/coding-style/coding-conventions
+- Microsoft가 권장하는 코딩 스타일이 존재
+- DI 필드: Microsoft는 private 필드의 _camelCase 컨벤션을 권장함, _service, _context, _logger와 같이 쓰면 해당 필드는 현재 DI받는구나 명시적으로 알기 쉬움, 또한 지역변수 및 속성(프로퍼티)과 햇갈릴 일이 줄어듦
+
 ## EntityFramework Core
 ### ADO.NET VS EntityFramework Core
 #### 1. ADO.NET
