@@ -109,9 +109,10 @@ else{
 <br>
 
 ## Model이란?
-- Spring MVC에서는 Controller에서 Model 객체 혹은 값을 View로 넘김
-- ASP.NET Core에서도 매커니즘은 같지만 Model을 Spring Framework에서 부르던 엔티티(도메인)과 같은 의미로 쓰는듯
-- 즉 ASP.NET Core에서의 Model = Entity or View 전달용 객체 두 가지 의미를 내포한듯
+- 데이터 구조 및 논리 설명하는 클래스로 엔티티 도메인과 비슷한 개념
+- Spring에서 domain 혹은 entity로 분류했던 Person, Restaurant, Food, User, Member, Item 등 모든 추상화된 객체들을 담는 설계도
+- 또한 Spring MVC에서 처럼 컨트롤러에서 뷰에 전달하는 객체의 의미도 존재
+- 즉 ASP.NET Core에서의 Model = Domain 혹은 View에 전달할 객체 두 가지 의미를 내포한듯
 
 
 ## Controller에서 View로 Model 넘기는 3가지 방법
