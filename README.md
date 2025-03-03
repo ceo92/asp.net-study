@@ -108,6 +108,12 @@ else{
 
 <br>
 
+## Model이란?
+- Spring MVC에서는 Controller에서 Model 객체 혹은 값을 View로 넘김
+- ASP.NET Core에서도 매커니즘은 같지만 Model을 Spring Framework에서 부르던 엔티티(도메인)과 같은 의미로 쓰는듯
+- 즉 ASP.NET Core에서의 Model = Entity or View 전달용 객체 두 가지 의미를 내포한듯
+
+
 ## Controller에서 View로 Model 넘기는 3가지 방법
 - 컨트롤러에서 ```return View()```를 통해 전달 가능
 - 이때 View() 메서드에 어떤 파라메터를 지정하느냐에 따라 3가지 방법으로 나뉨(1. 뷰 파라메터로 객체 전달(Model) 2. ViewBag 전달 3. ViewData 전달)
