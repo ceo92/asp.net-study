@@ -225,3 +225,7 @@ https://learn.microsoft.com/ko-kr/dotnet/csharp/fundamentals/coding-style/coding
 - 선 코드 후 DB
 
 
+## ADO.NET
+Java의 순수 JDBC 사용해서 개발하는 것과 같이 직접 1. 커넥션 연결 2. sql 요청 3. 결과 응답의 과정 개발자가 직접 수행하는 것
+
+
